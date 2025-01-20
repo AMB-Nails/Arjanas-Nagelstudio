@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageldesign von Arjana</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8c9d4; /* Sanftes Rosa */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 3px solid #ffd700; /* Goldene Linie */
+        }
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            text-align: center;
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #343a40;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700; /* Goldene Farbe bei Hover */
+        }
+        section {
+            padding: 40px 20px;
+            flex: 1;
+        }
+        .gallery-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: inline-block;
+            white-space: nowrap;
+            transition: transform 0.3s ease;
+        }
+        .gallery img {
+            width: 220px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ffd700; /* Goldene Umrandung */
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .price-list {
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .price-list th, .price-list td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .price-list th {
+            background-color: #343a40;
+            color: white;
+            font-size: 1.1em;
+        }
+        .price-list td {
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .advantage-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .advantage-list h3 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        .advantage-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .advantage-list ul li {
+            font-size: 1.2em;
+            color: #343a40;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantage-list ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-size: 1.5em;
+            top: 0;
+        }
+        .price-list tr {
+            background-color: white;
+        }
+
+        /* Media Query für mobile Ansicht */
+        @media (max-width: 768px) {
+            footer {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            footer p {
+                margin: 0;
+            }
+            footer a {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Willkommen bei Arjanas Nageldesign</h1>
+        <p>Kreatives und professionelles Nageldesign mit Gel</p>
+    </header>
+
+    <nav>
+        <a href="#gallery">Galerie</a>
+        <a href="#preisliste">Preisliste</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/h9pakuc1ud3csdnunjuvg/Screenshot_20250109_135512_Instagram.jpg?rlkey=o916bhgpokqp058pt1b2pm9hy&e=1&st=evfcowb3&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/j1odod42gri106refn5ra/Screenshot_20250109_135504_Instagram.jpg?rlkey=wjn4d3clncja7cv6ecd5q6y91&e=1&st=kp2wzjir&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/wtv7dr7jlx7n4lp8reyjh/Screenshot_20250109_135445_Instagram.jpg?rlkey=f3yc36ujuu7fw5o2p5d17ovtt&e=1&st=ujdqi8ib&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/agkqrr90xjav7eo8uxdem/Screenshot_20250109_135440_Instagram.jpg?rlkey=jgixe49olsfxev4iwas724ygh&e=1&st=wr40o8vw&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/vi511cb6sqqhsvkvoujtd/Screenshot_20250109_135233_Instagram.jpg?rlkey=zowvbp5i9hc9bzgi44dzqxioj&e=1&st=0vv52w10&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/jrj8c0t1wuetqicara2uw/Screenshot_20250109_135158_Instagram.jpg?rlkey=y6ton6mu1ybjsv38f3scntdt5&e=1&st=3gzlqer2&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/l1efil3nklv5z5krhdl2b/Screenshot_20250109_135149_Instagram.jpg?rlkey=03x94zew2nb3biqkw51uf0cv8&e=1&st=6db88ucw&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/9p748g12hvqxd3jrez8td/Screenshot_20250109_135113_Instagram.jpg?rlkey=puulbgt9qz1k5gqczpuq14rk0&e=1&st=5egosp2l&dl=0" alt="Beschreibung des Bildes">
+                <img src="https://dl.dropboxusercontent.com/scl/fi/o2yh0cvufa4xfgus7viq9/Screenshot_20250109_135059_Instagram.jpg?rlkey=qy4vmr3tewnt6sz3ut0tvrhh4&e=1&st=2wwoxi8y&dl=0" alt="Beschreibung des Bildes">
+
+            </div>
+        </div>
+        <p>Besuchen Sie meine <a href="https://www.instagram.com/nagelstudio_arjana/?igsh=dGZpeHRybGtxbWxu">Instagram-Seite</a> für mehr Bilder!</p>
+    </section>
+
+    <section id="vorteile" class="advantage-list">
+        <h3>Vorteile von Gel-Nägeln</h3>
+        <ul>
+            <li>Langlebigkeit: Gel-Nägel halten in der Regel länger als andere Nagelverlängerungen.</li>
+            <li>Natürliches Aussehen: Gel sorgt für einen natürlichen, glänzenden Look, der wie echte Nägel aussieht.</li>
+            <li>Stabilität: Gel-Nägel sind widerstandsfähig und brechen oder splittern weniger schnell.</li>
+            <li>Keine unangenehmen Gerüche: Im Gegensatz zu Acryl-Nägeln gibt es bei der Anwendung von Gel keine unangenehmen Gerüche.</li>
+            <li>Individuelle Gestaltungsmöglichkeiten: Gel-Nägel bieten eine Vielzahl von Designs und Verzierungen, die auf deinen persönlichen Stil abgestimmt werden können.</li>
+            <li>Stärkung der Naturnägel: Gel bietet eine schützende Schicht, die den Naturnagel vor äußeren Einflüssen schützt.</li>
+        </ul>
+    </section>
+
+    <section id="preisliste">
+        <h2>Preisliste</h2>
+        <table class="price-list">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Preis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Verlängerung mit Tips</td>
+                    <td>35€</td>
+                </tr>
+                <tr>
+                    <td>Natürliche Nägel</td>
+                    <td>20€</td>
+                </tr>
+                <tr>
+                    <td>French Nails</td>
+                    <td>45€</td>
+                </tr>
+                <tr>
+                    <td>Ombre Nails</td>
+                    <td>45€</td>
+                </tr>
+                <tr>
+                    <td>Design (pro Nagel)</td>
+                    <td>2€</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Für Termine und weitere Informationen:</p>
+        <p>Adresse: Elkan-Naumburgstraße 22, 91757 Treuchtlingen</p>
+        <p>Du kannst deine Designwünsche auch gerne über WhatsApp, Instagram oder E-Mail zusenden:</p>
+        <ul>
+            <li>WhatsApp: <a href="https://wa.me/017663872910">0176 63872910</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/nagelstudio_arjana/">@nagelstudio_arjana</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Arjana. Alle Rechte vorbehalten. | <a href="https://www.instagram.com/nagelstudio_arjana/?igsh=dGZpeHRybGtxbWxu" target="_blank">Instagram</a></p>
+    </footer>
+
+</body>
+</html>
